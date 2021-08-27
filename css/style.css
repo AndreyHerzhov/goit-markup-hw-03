@@ -28,6 +28,11 @@ li {
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
   text-decoration: none;
@@ -74,13 +79,16 @@ li {
 .header-nav-list-item:not(:first-child) {
   margin-left: 50px;
 }
+.header-nav-list-item {
+  list-style: none;
+}
 
 .contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.telefon {
+.contact-list-item:last-child {
   margin-left: 50px;
 }
 .contacts.link {
@@ -272,7 +280,6 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 .section-command-title {
@@ -299,12 +306,13 @@ li {
   flex-direction: row;
 }
 
-.section-second {
-  background-color: #f5f4fa;
+.section-command-card {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.img-comand {
-  margin-bottom: 30px;
+.section-second {
+  background-color: #f5f4fa;
 }
 
 /*-----------------footer---------------*/
@@ -318,7 +326,7 @@ li {
   margin: 0 auto;
 }
 
-.adress-footer {
+.adress {
   margin-top: 20px;
 }
 .andress {
@@ -464,14 +472,10 @@ li {
   margin-bottom: 30px;
 }
 
-.main-portfolio-list-item {
-  border: 1px solid #eeeeee;
-}
-
-.portfolio-img {
-  margin-bottom: 20px;
-}
-
 .main-portfolio-content {
-  padding: 20px 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
