@@ -41,7 +41,7 @@ li {
 
 /*---------------header-----------*/
 .header-logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -49,35 +49,45 @@ li {
   letter-spacing: 0.03em;
   color: black;
   padding: 24px 0 25px 0;
-  outline: 1px solid tomato;
 }
 
 .web {
   color: #2196f3;
 }
-
-.header-nav {
-  padding: 32px 0 32px 0;
-  margin-left: 93px;
-  outline: 1px solid tomato;
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-nav-list {
+  display: flex;
 }
 
-.header-nav > a:not(:first-child) {
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav {
+  margin-left: 93px;
+}
+
+.header-nav-list-item:not(:first-child) {
   margin-left: 50px;
 }
 
 .contacts-list {
   display: flex;
-  outline: 1px solid tomato;
-  padding-left: 324px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
 }
 
 .telefon {
   margin-left: 50px;
 }
-
+.contacts.link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
 .contacts {
   font-style: normal;
   font-weight: 500;
@@ -96,14 +106,15 @@ li {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-header {
   display: flex;
 }
 
 .container.header {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 1px solid tomato;
+  display: flex;
 }
 
 /*-------------gap-------------*/
@@ -115,24 +126,22 @@ li {
 /*---------------hero-----------*/
 .hero {
   background-color: #2f303a;
-  min-width: 1600px;
-}
-
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: 1px solid tomato;
   padding-bottom: 200px;
   padding-top: 200px;
 }
+
+/* .hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 .hero-titel {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-
   text-align: center;
 }
 
@@ -146,8 +155,13 @@ li {
   color: #ffffff;
   margin-top: 30px;
   max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-
+.hero-container {
+  display: block;
+}
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
@@ -170,6 +184,11 @@ li {
 
 /*---------------main-----------*/
 
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .main-list-title {
   font-size: 14px;
   line-height: 1.14;
@@ -187,7 +206,6 @@ li {
 }
 .main-list-item {
   width: 270px;
-  outline: 1px solid tomato;
 }
 
 .main-list-item:not(:first-child) {
@@ -198,25 +216,18 @@ li {
   display: flex;
 }
 
-.main .container {
-  padding-top: 29px;
-  padding-bottom: 94px;
-}
-
 /*-----------------title-hide----------------*/
 .title-hide {
   display: none;
 }
 
 /*-----------------first-section---------------------*/
+/*------------------marin-0-auto----------------*/
 
-.container-first {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  outline: 1px solid green;
+.section-first {
   padding-bottom: 94px;
 }
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -224,12 +235,6 @@ li {
   color: var(--secondary-title-color);
   text-align: center;
   margin-bottom: 50px;
-}
-
-.section-first .container {
-  display: inline-block;
-  outline: 1px solid tomato;
-  padding-bottom: 94px;
 }
 
 .section-list {
@@ -242,6 +247,11 @@ li {
 }
 
 /*-----------------second-section---------------------*/
+
+.section-second {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-command {
   font-size: 36px;
@@ -297,14 +307,6 @@ li {
   margin-bottom: 30px;
 }
 
-.container-section-second {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 /*-----------------footer---------------*/
 
 .container-footer {
@@ -313,11 +315,11 @@ li {
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 
 .adress-footer {
   margin-top: 20px;
-  outline: 1px solid tomato;
 }
 .andress {
   font-style: normal;
@@ -338,10 +340,11 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: black;
-  outline: 1px solid tomato;
 }
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .studio-footer {
@@ -371,6 +374,10 @@ li {
 /*-----------------portfolio----------------*/
 
 /* identical to box height, or 200% */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .main-portfolio-titel {
   font-size: 18px;
@@ -401,8 +408,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .button-list-item:not(:first-child) {
@@ -412,7 +418,6 @@ li {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid green;
 }
 
 .hero-button-portfolio {
@@ -445,15 +450,6 @@ li {
 }
 
 /*---------------portfolio-list----------------*/
-
-.container-list {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 34px;
-  outline: 1px solid tomato;
-  padding-bottom: 94px;
-}
 
 .main-portfolio-list {
   display: flex;
