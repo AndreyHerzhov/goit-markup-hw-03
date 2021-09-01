@@ -169,7 +169,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
   padding-bottom: 200px;
@@ -325,9 +325,6 @@ img {
 .master-socials {
   margin-top: 16px;
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
 }
 
 .social-link {
@@ -405,6 +402,9 @@ img {
 
 .section-command-card {
   padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .section-second {
